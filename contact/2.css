@@ -1,0 +1,84 @@
+body {
+	font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+	background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+	max-width: 400px;
+	margin: 32px auto;
+}
+
+.contact-info {
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+	padding: 32px 28px 24px 28px;
+	text-align: right;
+	direction: rtl;
+	color: #222;
+	transition: box-shadow 0.2s;
+}
+
+.contact-info:hover {
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.13);
+}
+
+.contact-info h1 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 2rem;
+	color: #2b6cb0;
+	letter-spacing: -1px;
+}
+
+.contact-info p {
+	margin: 12px 0;
+	font-size: 1.08rem;
+}
+
+.contact-info a {
+	color: #3182ce;
+	text-decoration: none;
+	transition: color 0.2s;
+	word-break: break-all;
+}
+
+.contact-info a:hover {
+	color: #2b6cb0;
+	text-decoration: underline;
+}
+
+.contact-info strong {
+	color: #4a5568;
+	font-weight: bold;
+}
+
+/* .contact-info {
+	...existing code...
+} */
+
+@media (max-width: 480px) {
+
+
+    
+	body {
+		font-size: 14px;
+	}
+	.contact-info {
+		padding: 18px 8px 14px 8px;
+        margin: 0 16px;
+	}
+	.contact-info h1 {
+		font-size: 1.2rem;
+	}
+	.contact-info p {
+		font-size: 0.95rem;
+	}
+}

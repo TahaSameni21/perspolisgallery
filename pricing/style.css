@@ -1,0 +1,87 @@
+body {
+	font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+	background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+	max-width: 700px;
+	margin: 40px auto;
+	padding: 0 10px;
+}
+
+.pricing-section {
+	margin-bottom: 36px;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+	padding: 24px 18px 18px 18px;
+	direction: rtl;
+	text-align: right;
+}
+
+.pricing-section h1 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 1.4rem;
+	color: #2b6cb0;
+	letter-spacing: -1px;
+}
+
+.pricing-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #f9fafb;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+}
+
+.pricing-table th, .pricing-table td {
+	padding: 12px 8px;
+	border-bottom: 1px solid #e2e8f0;
+	font-size: 1.05rem;
+}
+
+.pricing-table th {
+	background: #edf2f7;
+	color: #2b6cb0;
+	font-weight: bold;
+}
+
+.pricing-table tr:last-child td {
+	border-bottom: none;
+}
+
+.gold-table th {
+	background: #fffbe6;
+	color: #b7791f;
+}
+
+.coin-table th {
+	background: #e6fffa;
+	color: #319795;
+}
+
+@media (max-width: 600px) {
+	main {
+		max-width: 98vw;
+		padding: 0 2vw;
+	}
+	.pricing-section {
+		padding: 12px 4px 10px 4px;
+	}
+	.pricing-section h1 {
+		font-size: 1.1rem;
+	}
+	.pricing-table th, .pricing-table td {
+		font-size: 0.95rem;
+		padding: 7px 3px;
+	}
+}
